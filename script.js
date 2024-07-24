@@ -63,11 +63,8 @@ function drawcard(){
         player.Chips = player.Chips - 20
         updatechips()
     }
+    if(player.Chips === 0){
+        player.Chips = 200
+        start()
+    }
 }
-
-countries = ["a" , "b" , "c"]
-countries.pop()
-countries.push("d")
-countries.shift()
-countries.unshift("p")
-console.log(countries)
